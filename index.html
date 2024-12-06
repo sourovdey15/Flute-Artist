@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flute Artist</title>
+    <!-- Tailwind And Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/ea12aba3f5.js" crossorigin="anonymous"></script>
+    <!-- Noto Serif Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Custom Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#cea350',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom Css -->
+    <style>
+        .primary-font {
+            font-family: "Noto Serif", serif;
+        }
+        .font-italic {
+            font-family: "Noto Serif", serif;
+            font-style: italic;
+        }
+
+        .mainbg {
+            position: relative;
+            background-color: #000000e6;
+        }
+
+        .mainbg::before {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.2;
+            background: url("/images/banner.jpg") no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+
 </head>
-<body>
-    <h1>This is heading</h1>
+
+<body class="primary-font">
+    <!-- Header Area -->
+    <header class="">
+        <div class="mainbg min-h-screen">
+            <!--Large Screen Menu Area -->
+            <nav class="hidden lg:block text-neutral-300 w-[90%] mx-auto ">
+                <ul class="flex gap-16 items-center justify-center font-extrabold pt-8 text-[14px]">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Biography</a></li>
+                    <li><a href=""><img class="w-[100%]" src="images/site-logo.svg" alt="Site Logo"></a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <!--Small Screen Menu Area -->
+            <nav class="mobile-menu flex items-center justify-between w-[90%] mx-auto lg:hidden">
+                <div>
+                    <img src="images/site-logo.svg" alt="site logo">
+                </div>
+                <!-- Drop Down -->
+                <div>
+                    <details class="dropdown dropdown-end">
+                        <summary class="btn m-1 bg-slate-100 opacity-60"><i class="fa-solid fa-bars"></i></summary>
+                        <ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow font-semibold">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Biography</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </nav>
+            <!-- Banner Area -->
+            <div class="text-area text-center mt-20 text-white ">
+                <h3 class="text-xl font-bold ">Hi.</h3>
+                <h2 class="text-4xl md:text-8xl font-semibold mb-9 mt-9">I am Linda Daniella. </h2>
+                <h2 class="text-4xl md:text-8xl font-semibold mb-9">Professional Flautist.</h2>
+                <p class="font-semibold text-[12px] md:text-[16px] px-10 lg:px-60 ">
+                    Hendrerit a morbi mauris proin vulputate id lacinia malesuada amet, eget nibh eget sapien tellus
+                    enim
+                    imperdiet dignissim sed tellus sit lacinia.
+                </p>
+            </div>
+            <!-- Social Icons Area -->
+            <div class="text-center">
+                <h4 class="mt-10 font-semibold text-xl text-white ">Stay Connected</h4>
+                <div>
+                    <ul class="text-white text-2xl flex justify-center gap-8 py-10">
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-skype"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Text Area -->
+    <section class="w-4/5 mx-auto my-20">
+        <div class="icon mb-10">
+            <i class="fa-solid fa-quote-left text-5xl text-primary-color"></i>
+        </div>
+        <div>
+            <p class="text-4xl font-italic font-semibold md:pr-24 leading-snug">An exceptional iaculis massa imperdiet tortor pharetra velit feugiat mauris tempus aliquam hac blandit
+                montes.
+            </p>
+            <h4 class="mt-4 text-primary-color text-2xl ">Gamel Daily Newspaper, Milan.</h4>
+        </div>
+    </section>
+    <!-- Biography Area -->
+    <section class="w-4/5 mx-auto flex flex-col md:flex-row justify-between ">
+        <div class="flex-1">
+            <img src="images/model.jpg" alt="Model image">
+        </div>
+        <div class="flex-1 mt-9 md:mt-0 ">
+            <h4 class="mt-4 text-primary-color text-2xl ">Biography</h4>
+            <h2 class="text-4xl md:text-5xl font-semibold mt-9 leading-10">Supreme Interpreter </h2>
+            <h2 class="text-4xl md:text-5xl font-semibold my-5 leading-10">Of The Classical</h2>
+            <h2 class="text-4xl md:text-5xl font-semibold mb-9">Flute</h2>
+            <p class="leading-[30px] text-[#666]">
+            In pharetra a felis odio eleifend hendrerit adipiscing id nulla sapien, ullamcorper ac, varius
+            leotellus sagittis consectetur egestas tortor, enim arcu blandit diam. 
+            <br> <br>
+            Pellentesque in eu, iaculis massa imperdiet tortor, pharetra, velit feugiat mauris, tempus, aliquam sed vel hac blandit montes, porta posuere faucibus massa quam ultrices orci id varius integer cursus leo risus, fermentum arcu posuere volutpat urna, eu nisl mattis tristique nisi, odio interdum malesuada amet aliquam ultricies erat
+            </p>
+            <a href=""><h4 class="font-semibold mt-6"><i class="fa-solid fa-arrow-right pr-2"></i> Read More</h4> </a> 
+        </div>
+    </section>
+    <!-- Display Image Area -->
+     <section class="my-20">
+        <div>
+            <img src="images/banner.jpg" alt="Banner Image">
+        </div>
+     </section>
+     <!-- Discography Area -->
+      <section>
+        <div class="text-center ">
+
+        </div>
+      </section>
 </body>
+
 </html>

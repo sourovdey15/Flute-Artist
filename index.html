@@ -33,6 +33,7 @@
         .primary-font {
             font-family: "Noto Serif", serif;
         }
+
         .font-italic {
             font-family: "Noto Serif", serif;
             font-style: italic;
@@ -65,12 +66,12 @@
         <div class="mainbg min-h-screen">
             <!--Large Screen Menu Area -->
             <nav class="hidden lg:block text-neutral-300 w-[90%] mx-auto ">
-                <ul class="flex gap-16 items-center justify-center font-extrabold pt-8 text-[14px]">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Biography</a></li>
+                <ul class="flex gap-16 items-center justify-center font-extrabold pt-8 text-[14px] ">
+                    <li class="hover:text-primary-color"><a class="" href="">Home</a></li>
+                    <li class="hover:text-primary-color"><a href="">Biography</a></li>
                     <li><a href=""><img class="w-[100%]" src="images/site-logo.svg" alt="Site Logo"></a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li class="hover:text-primary-color"><a href="">Gallery</a></li>
+                    <li class="hover:text-primary-color"><a href="">Contact</a></li>
                 </ul>
             </nav>
             <!--Small Screen Menu Area -->
@@ -107,7 +108,7 @@
                 <h4 class="mt-10 font-semibold text-xl text-white ">Stay Connected</h4>
                 <div>
                     <ul class="text-white text-2xl flex justify-center gap-8 py-10">
-                        <li><i class="fa-brands fa-youtube"></i></li>
+                        <li class=""><i class="fa-brands fa-youtube"></i></li>
                         <li><i class="fa-brands fa-facebook"></i></li>
                         <li><i class="fa-brands fa-twitter"></i></li>
                         <li><i class="fa-brands fa-skype"></i></li>
@@ -122,14 +123,15 @@
             <i class="fa-solid fa-quote-left text-5xl text-primary-color"></i>
         </div>
         <div>
-            <p class="text-4xl font-italic font-semibold md:pr-24 leading-snug">An exceptional iaculis massa imperdiet tortor pharetra velit feugiat mauris tempus aliquam hac blandit
+            <p class="text-4xl font-italic font-semibold md:pr-24 leading-snug">An exceptional iaculis massa imperdiet
+                tortor pharetra velit feugiat mauris tempus aliquam hac blandit
                 montes.
             </p>
             <h4 class="mt-4 text-primary-color text-2xl ">Gamel Daily Newspaper, Milan.</h4>
         </div>
     </section>
     <!-- Biography Area -->
-    <section class="w-4/5 mx-auto flex flex-col md:flex-row justify-between ">
+    <section class="w-4/5 mx-auto flex flex-col md:flex-row justify-between gap-6 items-center ">
         <div class="flex-1">
             <img src="images/model.jpg" alt="Model image">
         </div>
@@ -139,26 +141,208 @@
             <h2 class="text-4xl md:text-5xl font-semibold my-5 leading-10">Of The Classical</h2>
             <h2 class="text-4xl md:text-5xl font-semibold mb-9">Flute</h2>
             <p class="leading-[30px] text-[#666]">
-            In pharetra a felis odio eleifend hendrerit adipiscing id nulla sapien, ullamcorper ac, varius
-            leotellus sagittis consectetur egestas tortor, enim arcu blandit diam. 
-            <br> <br>
-            Pellentesque in eu, iaculis massa imperdiet tortor, pharetra, velit feugiat mauris, tempus, aliquam sed vel hac blandit montes, porta posuere faucibus massa quam ultrices orci id varius integer cursus leo risus, fermentum arcu posuere volutpat urna, eu nisl mattis tristique nisi, odio interdum malesuada amet aliquam ultricies erat
+                In pharetra a felis odio eleifend hendrerit adipiscing id nulla sapien, ullamcorper ac, varius
+                leotellus sagittis consectetur egestas tortor, enim arcu blandit diam.
+                <br> <br>
+                Pellentesque in eu, iaculis massa imperdiet tortor, pharetra, velit feugiat mauris, tempus, aliquam sed
+                vel hac blandit montes, porta posuere faucibus massa quam ultrices orci id varius integer cursus leo
+                risus, fermentum arcu posuere volutpat urna, eu nisl mattis tristique nisi, odio interdum malesuada amet
+                aliquam ultricies erat
             </p>
-            <a href=""><h4 class="font-semibold mt-6"><i class="fa-solid fa-arrow-right pr-2"></i> Read More</h4> </a> 
+            <a href="">
+                <h4 class="font-semibold mt-6 hover:text-primary-color"><i class="fa-solid fa-arrow-right pr-2"></i>
+                    Read More</h4>
+            </a>
         </div>
     </section>
     <!-- Display Image Area -->
-     <section class="my-20">
+    <section class="my-20">
         <div>
             <img src="images/banner.jpg" alt="Banner Image">
         </div>
-     </section>
-     <!-- Discography Area -->
-      <section>
+    </section>
+    <!-- Discography Area -->
+    <section>
+        <!-- Discography Text Area -->
         <div class="text-center ">
-
+            <h4 class="text-primary-color text-xl md:text-2xl mb-6">Discography</h4>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-6">Latest Album </h2>
+            <p class="text-[#666] w-1/2 mx-auto">In pharetra a felis odio eleifend hendrerit adipiscing id nulla sapien,
+                ullamcorper ac, varius leo tellus sagittis consectetur egestas tortor, enim arcu blandit diam.
+            </p>
         </div>
-      </section>
+        <!-- Discography Album Area -->
+        <div class="album-area my-20 w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <!-- Card 1 -->
+            <div class="card1 space-y-6 ">
+                <div>
+                    <img class="mx-auto" src="images/Album(1).jpg" alt="album1">
+                </div>
+                <div class=" space-y-6 ">
+                    <h4 class="text-2xl font-semibold ">Silver Linings </h4>
+                    <p class="text-[#666]">Mi feugiat aliquet at elit urna consectetur et habitant erat elit nibh dictum
+                        purus
+                    </p>
+                </div>
+            </div>
+            <!-- Card 1 -->
+            <div class="card1 space-y-6 ">
+                <div>
+                    <img class="mx-auto" src="images/Album(2).jpg" alt="album1">
+                </div>
+                <div class=" space-y-6 ">
+                    <h4 class="text-2xl font-semibold ">Baseless</h4>
+                    <p class="text-[#666]">Consequat ac dignissim sagittis, lobortis sit pulvinar nunc enim, dignissim
+                    </p>
+                </div>
+            </div>
+            <!-- Card 1 -->
+            <div class="card1 space-y-6 ">
+                <div>
+                    <img class="mx-auto" src="images/Album(3).jpg" alt="album1">
+                </div>
+                <div class=" space-y-6 ">
+                    <h4 class="text-2xl font-semibold ">Curtain Fall </h4>
+                    <p class="text-[#666]">Diam urna tincidunt consectetur placerat vestibulum nam est cra
+                    </p>
+                </div>
+            </div>
+            <!-- Card 1 -->
+            <div class="card1 space-y-6 ">
+                <div>
+                    <img class="mx-auto" src="images/Album(4).jpg" alt="album1">
+                </div>
+                <div class=" space-y-6 ">
+                    <h4 class="text-2xl font-semibold ">Once Bitten</h4>
+                    <p class="text-[#666]">Lacus orci integer eleifend eget phasellus hendrerit odio et mus
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Review Area -->
+    <section class="review my-20 w-4/5 mx-auto">
+        <hr>
+        <div class="my-10 grid grid-cols-1 md:grid-cols-2 gap-10 ">
+            <!-- Review Card 1 -->
+            <div>
+                <P class="text-2xl">"Gravida lorem vitae pulvinar praesent aliquet pellentesque non quam viverra cursus
+                    consectetur tempor sed lectus ultricies urna, risus sit."
+                </P>
+                <div class="flex items-center gap-4 mt-4">
+                    <img class="rounded-full" src="images/team1.jpg" alt="team1">
+                    <h4 class="text-gray-700 font-semibold">Paula Robinson</h4>
+                </div>
+            </div>
+            <!-- Review Card 2 -->
+            <div>
+                <P class="text-2xl">"Faucibus eget ullamcorper nascetur suspendisse purus nisi, sapien at ipsum
+                    tincidunt quis sed fermentum risus nibh tristique."
+                </P>
+                <div class="flex items-center gap-4 mt-4">
+                    <img class="rounded-full" src="images/team2.jpg" alt="team2">
+                    <h4 class="text-gray-700 font-semibold">Jack Smit</h4>
+                </div>
+            </div>
+            <!-- Review Card 3 -->
+            <div>
+                <P class="text-2xl">"Malesuada nibh eu sed elit purus, sit sem molestie enim, egestas aliquet etiam
+                    donec tristique nec."
+                </P>
+                <div class="flex items-center gap-4 mt-4">
+                    <img class="rounded-full" src="images/team3.jpg" alt="team3">
+                    <h4 class="text-gray-700 font-semibold">Alice Miles</h4>
+                </div>
+            </div>
+            <!-- Review Card 4 -->
+            <div>
+                <P class="text-2xl">"Pharetra turpis euismod est tellus, ac adipiscing adipiscing!"
+                </P>
+                <div class="flex items-center gap-4 mt-4">
+                    <img class="rounded-full" src="images/team4.jpg" alt="team4">
+                    <h4 class="text-gray-700 font-semibold">Matthew Johnson</h4>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <!-- Gallery Area -->
+    <section class="gallery w-4/5 mx-auto text-center">
+        <!-- Gallery Text Area -->
+        <div>
+            <div class="title mb-12">
+                <h4 class="text-xl md:text-2xl text-primary-color">Media</h4>
+            </div>
+            <div class="text-area">
+                <h2 class="text-3xl md:text-4xl font-semibold mb-6">Photo Gallery </h2>
+                <p class="text-[#666] w-4/5 mx-auto">In pharetra a felis odio eleifend hendrerit adipiscing id nulla sapien, ullamcorper ac, varius leo tellus sagittis consectetur egestas tortor, enim arcu blandit diam.
+                </p>
+            </div>
+        </div>
+        <!-- Gallery Image Area -->
+         <div class="my-20 grid gird-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <img src="images/Gallery1.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/Gallery2.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/Gallery3.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/Gallery4.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/Gallery5.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/Gallery6.jpg" alt="">
+            </div>
+         </div>
+    </section>
+    <!-- Full Width Map -->
+     <section class="location">
+        <div class="mb-20">
+            <iframe class="min-w-full min-h-[450px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195600.6265139105!2d-75.28284045353587!3d40.00264429543159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b7d8d4b54beb%3A0x89f514d88c3e58c1!2sPhiladelphia%2C%20PA%2C%20USA!5e0!3m2!1sen!2sbd!4v1733577537234!5m2!1sen!2sbd"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- Social Media -->
+        <div class="text-center">
+            <h4 class="mt-10 font-semibold text-xl text-primary-color ">Stay Connected</h4>
+            <div>
+                <ul class="text-primary-color text-2xl md:text-4xl flex justify-center gap-8 py-6">
+                    <li class="hover:text-black"><i class="fa-brands fa-youtube"></i></li>
+                    <li class="hover:text-black"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="hover:text-black"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="hover:text-black"><i class="fa-brands fa-skype"></i></li>
+                </ul>
+            </div>
+        </div>
+     </section>
+     <!-- Footer Area -->
+     <footer class="w-4/5 mx-auto flex flex-col md:flex-row gap-5 items-center justify-between my-20 text-center">
+        <div class="space-y-4">
+            <h4 class="text-2xl font-bold">Linda Daniella</h4>
+        <p>Copyright © 2024 Flute Artist
+            <br>
+            Powered by Flute Artist</p>
+        </div>
+        <div class="space-y-4">
+            <h4 class="text-2xl font-bold">Address</h4>
+        <p>12 Demo St, Philadelphia, PA
+            <br> 12345, United States/p>
+        </div>
+        </div>
+        <div class="space-y-4">
+            <h4 class="text-2xl font-bold">Phone</h4>
+        <p>+1 123-456-7890 </p>
+        </div>
+        </div>
+        <div class="space-y-4">
+            <h4 class="text-2xl font-bold">Email</h4>
+        <p>1mail@example.com </p>
+        </div>
+     </footer>
 </body>
 
 </html>
